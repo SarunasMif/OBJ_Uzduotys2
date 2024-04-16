@@ -270,6 +270,56 @@ int fileInput(string filename){
     return 0;
 }
 
+int generateFile(){
+    int s_num = 0;
+    int hw_hum = 0;
+    string filename;
+
+    cout << "Kiek studentu generuoti norit: ";
+    cin >> s_num;
+
+    cout << "Kiek namu darbu buvo: ";
+    cin >> hw_hum;
+    //Number_Of_Homework = hw_hum;
+
+    auto start = high_resolution_clock::now();
+    filename =  "Studentai" + to_string(s_num) + ".txt";
+    ofstream write(filename);
+
+    random_device rd;
+    mt19937 gen(rd());
+    uniform_int_distribution<int> dis(1, 10);
+
+    write << left << setw(15) << "Vardas" << setw(15) << "Pavarde";
+
+    for (int i = 0; i < hw_hum; i++){
+        write << "ND" + to_string(i + 1) << "\t";
+    }
+    write << "Egz." << endl;
+
+    for (int i = 0; i < s_num; i++){
+        stringstream s_data;
+        s_data << left << setw(15) << "Vardas" + to_string(i + 1) << setw(15) << "Pavarde" + to_string(i + 1);
+
+        for (int j = 0; j <= hw_hum; j++){
+            s_data << setw(6) << dis(gen) << "\t";
+        }
+
+        write << s_data.str() << endl;
+    }//Sugeneruoja pazymius atsitiktinai
+
+    write.close();
+
+    auto stop = high_resolution_clock::now();
+    chrono::duration<double> diff = stop - start;
+    cout << "Failas sukurtas! Failo kurimas uztruko " << diff.count() << " sekundes." << endl;
+
+    fileInput(filename);
+
+    return 0;
+
+}
+
 int main() {
     cout << "VECTOR" << endl;
     cout << "Ar norite ivesti studentu duomenis rankiniu budu ar nuskaityti is failo?" << endl;
@@ -286,12 +336,13 @@ int main() {
         //manualInput();
     }
     else if (input_mode == "3"){
-        //generateFile();
+        generateFile();
     }else {
         string filename;
         filename = "kursiokai.txt";
 
         fileInput(filename);   
-    }    
+    }
+
     system("pause");
 }
