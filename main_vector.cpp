@@ -277,6 +277,7 @@ int manualInput(){
 
 void Input(Student_Data& Sdata, string gen_s){
     string str_placeholder;
+    int int_placeholder;
 
     cout << "Iveskite studento varda: ";
     cin >> str_placeholder;
@@ -474,7 +475,7 @@ int main() {
         generateFile();
     }else {
         string filename;
-        filename = "kursiokai.txt";
+        filename = "Studentai100000.txt";
 
         fileInput(filename);   
     }
