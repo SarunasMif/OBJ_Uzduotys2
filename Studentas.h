@@ -25,10 +25,12 @@ public:
     void SetSurname(string surname){ student_surname = surname; }
     void SetExam( double grade){ exam = grade; }
     void SetHW (vector<double>& HW_) { HW = HW_; }
+    //Setters
 
     istream& readStudent(istream&);
 };
 
 double avg_grade(const Student_Data& Sdata);
 double median_grade(const Student_Data& Sdata);
+//function declarations
 #endif
