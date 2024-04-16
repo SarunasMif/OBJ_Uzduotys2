@@ -18,4 +18,6 @@ int fileInput(const string filename);
 int generateFile();
 int manualInput();
 void Input(Student_Data& Sdata, string gen_s);
+//Deklaruotos funkcijos
+
 #endif
