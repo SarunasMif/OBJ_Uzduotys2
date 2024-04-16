@@ -19,7 +19,7 @@ istream& Student_Data::readStudent(istream& is){
   exam = HW.back();
   HW.pop_back();
   return is;
-}
+}//Studentu informacijos ivedimas i class
 
 double Average(const vector<double>& HW){
   double average = 0;
@@ -35,7 +35,7 @@ double avg_grade(const Student_Data& Sdata){
   double average = Average(Sdata.ND());
 
   return 0.4 * average + 0.6 * Sdata.egzaminas();
-}
+}//Vidurkio skaiciavimas
 
 double Median(const vector<double>& HW){
   double median;
@@ -58,4 +58,4 @@ double median_grade(const Student_Data& Sdata){
   double HW_median = Median(Sdata.ND());
 
   return 0.4 * HW_median + 0.6 * Sdata.egzaminas();
-}
+}//Medianos skaiciavimas
