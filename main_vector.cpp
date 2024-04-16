@@ -206,10 +206,145 @@ void printData(const vector<Student_Data>& Sdata, string mode, string filename){
         }
     }
 
+    system("pause");
     auto stop = high_resolution_clock::now();
     chrono::duration<double> diff = stop - start;
     cout << "Isvedimas baigtas! Isvedimas uztruko " << diff.count() << " sekundes." << endl;
 }
+
+int manualInput(){
+    vector<Student_Data> Sdata;
+
+    string str_placeholder;
+
+    do {
+        cout << "Ar zinote kiek studentu yra jusu klaseje? (y/n): ";
+        cin >> str_placeholder;
+    }while (str_placeholder != "y" && str_placeholder != "n");
+
+    do {
+        cout << "Ar norite, kad pazymiai butu sugeneruoti? (y/n): ";
+        cin >> gen_s;
+    }while (gen_s != "y" && gen_s != "n");
+
+    if (str_placeholder == "y"){
+        cout << "Kiek studentu yra jusu klaseje: ";
+        cin >> str_placeholder;
+
+        Number_Of_Students = stoi(str_placeholder);
+        vector<Student_Data> Sdata(Number_Of_Students);
+
+        for (int i = 0; i < Number_Of_Students; i++){
+            Input(Sdata[i], gen_s);
+        }    
+
+        do {
+            cout << "Ar norite, kad rusiuotu pagal vardus (1), pavardes (2), vidurki (3), pazymiu mediana (4)? : ";
+            cin >> str_placeholder;
+
+            if (!isDigit(str_placeholder, 2)){
+                cout << "Error, turi buti skaicius nuo 1 iki 4." << endl;
+            }
+        }while (!isDigit(str_placeholder, 2));
+
+       printData(Sdata, str_placeholder, "xd.txt");
+
+        return 0;
+    }else{
+        do {
+            Student_Data Stud_data;
+            Input(Stud_data, gen_s);
+            Sdata.push_back(Stud_data);
+
+            cout << "Ar norite ivesti dar viena studenta(y/n): ";
+            cin >> str_placeholder;
+        }while (str_placeholder == "y");
+
+        do {
+            cout << "Ar norite, kad rusiuotu pagal vardus (1), pavardes (2), vidurki (3), pazymiu mediana (4)? : ";
+            cin >> str_placeholder;
+
+            if (!isDigit(str_placeholder, 2)){
+                cout << "Error, turi buti skaicius nuo 1 iki 4." << endl;
+            }
+        }while (!isDigit(str_placeholder, 2));
+
+        splitstudents(Sdata, str_placeholder);
+
+        return 0;
+    }
+}// Rankinis studentu duomenu ivedimas
+
+void Input(Student_Data& Sdata, string gen_s){
+    string str_placeholder;
+
+    cout << "Iveskite studento varda: ";
+    cin >> str_placeholder;
+
+    Sdata.SetName(str_placeholder);
+
+    cout << "Iveskite studento pavarde: ";
+    cin >> str_placeholder;
+
+    Sdata.SetSurname(str_placeholder);
+
+    if (gen_s == "y"){                                   
+        random_device rd;
+        mt19937 gen(rd());
+        uniform_int_distribution<int> dis(1, 10);
+
+        Number_Of_Homework = dis(gen);
+        vector<double> HomeWork;
+
+        for (int i = 0; i < Number_Of_Homework; i++){
+            HomeWork.push_back(dis(gen));
+        }
+        Sdata.SetHW(HomeWork);
+
+        Sdata.SetExam(dis(gen));
+        // Sugeneruojami atsitiktinei pazmiai
+    }else{
+        do {
+            cout << "Kiek namu darbu turejo studentai: ";
+            cin >> str_placeholder;
+
+            if (!isDigit(str_placeholder, 0)){
+                cout << "Error! Turi buti skaicius. " << endl;
+            }
+        }while (!isDigit(str_placeholder, 0));
+
+        Number_Of_Homework = stoi(str_placeholder);
+        vector<double> HomeWork;
+
+        for (int j = 0; j < Number_Of_Homework; j++){
+           
+            do {
+                cout << "[" << j + 1 << "] Iveskite pazymi: ";
+                cin >> str_placeholder;
+
+                if (!isDigit(str_placeholder, 1)){
+                    cout << "Error! Pazimys turi buti naturalusis skaicius nuo 1 iki 10." << endl;
+                }
+            }while (!isDigit(str_placeholder, 1));
+
+            HomeWork.push_back(stoi(str_placeholder));
+        }
+
+        Sdata.SetHW(HomeWork);
+
+        do {
+            cout << "Iveskite egzamino pazymi: ";
+            cin >> str_placeholder;
+
+            if (!isDigit(str_placeholder, 1)){
+                cout << "Error! Pazimys turi buti naturalusis skaicius nuo 1 iki 10." << endl;
+            }
+        }while (!isDigit(str_placeholder, 1));
+
+        Sdata.SetExam(stoi(str_placeholder));
+    }// Jei vartotojas zino kiek turejo namu darbu
+}
+
 
 int fileInput(string filename){
     vector<Student_Data> Sdata;
@@ -333,7 +468,7 @@ int main() {
     }while (input_mode != "1" && input_mode != "2" && input_mode != "3");
 
     if (input_mode == "1"){
-        //manualInput();
+        manualInput();
     }
     else if (input_mode == "3"){
         generateFile();

@@ -1,6 +1,6 @@
 #include "includes.h"
 #include "Studentas.h"
-#include "headers_vector.h"
+//#include "headers_vector.h"
 
 Student_Data::~Student_Data(){
 
