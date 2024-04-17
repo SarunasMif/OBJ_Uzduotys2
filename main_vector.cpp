@@ -153,7 +153,7 @@ void printData(const vector<Student_Data>& Sdata, string mode, string filename){
         }//Rusiuoja pagal varda
         else if (mode == "2"){
             sort(sorted.begin(), sorted.end(), [](const Student_Data& a, const Student_Data& b) {
-                return stoi(a.pavarde().substr(6)) < stoi(b.pavarde().substr(6));
+                return stoi(a.pavarde().substr(7)) < stoi(b.pavarde().substr(7));
             });
         }//Rusiuoja pagal pavarde
         else if (mode == "3"){
@@ -180,7 +180,7 @@ void printData(const vector<Student_Data>& Sdata, string mode, string filename){
         }//Rusiuoja pagal varda
         else if (mode == "2"){
             sort(sorted.begin(), sorted.end(), [](const Student_Data& a, const Student_Data& b) {
-                return stoi(a.pavarde().substr(6)) < stoi(b.pavarde().substr(6));
+                return stoi(a.pavarde().substr(7)) < stoi(b.pavarde().substr(7));
             });
         }//Rusiuoja pagal pavarde
         else if (mode == "3"){
@@ -473,9 +473,9 @@ int main() {
     }
     else if (input_mode == "3"){
         generateFile();
-    }else {
+    }else if (input_mode == "2"){
         string filename;
-        filename = "Studentai100000.txt";
+        filename = "kursiokai.txt";
 
         fileInput(filename);   
     }
