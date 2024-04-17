@@ -32,8 +32,8 @@ void splitstudents(vector<Student_Data>& S_Data, string mode){
         chrono::duration<double> diff = stop - start;
         cout << "Rusiavimas baigtas! Rusiavimas uztruko " << diff.count() << " sekundes." << endl;
 
-        printData(kietiakiai, split_type, "kietiakiai.txt");
-        printData(nuskriaustukai, split_type, "nuskriaustukai.txt");
+        printData(kietiakiai, mode, "kietiakiai.txt");
+        printData(nuskriaustukai, mode, "nuskriaustukai.txt");
     }
     else if (split_type == "2"){
         auto start = high_resolution_clock::now();
@@ -58,8 +58,8 @@ void splitstudents(vector<Student_Data>& S_Data, string mode){
         chrono::duration<double> diff = stop - start;
         cout << "Rusiavimas baigtas! Rusiavimas uztruko " << diff.count() << " sekundes." << endl;
 
-        printData(S_Data, split_type, "kietiakiai.txt");
-        printData(vargsiukai, split_type, "nuskriaustukai.txt");
+        printData(S_Data, mode, "kietiakiai.txt");
+        printData(vargsiukai, mode, "nuskriaustukai.txt");
     }else {
         auto start = high_resolution_clock::now();
 
@@ -81,8 +81,8 @@ void splitstudents(vector<Student_Data>& S_Data, string mode){
         chrono::duration<double> diff = stop - start;
         cout << "Rusiavimas baigtas! Rusiavimas uztruko " << diff.count() << " sekundes." << endl;
 
-        printData(S_Data, split_type, "kietiakiai.txt");
-        printData(vargsiukai, split_type, "nuskriaustukai.txt");
+        printData(S_Data, mode, "kietiakiai.txt");
+        printData(vargsiukai, mode, "nuskriaustukai.txt");
     }
     
 
