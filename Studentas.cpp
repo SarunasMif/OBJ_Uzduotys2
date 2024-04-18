@@ -1,10 +1,6 @@
 #include "includes.h"
 #include "Studentas.h"
 
-Student_Data::~Student_Data(){
-
-}
-
 istream& Student_Data::readStudent(istream& is){
   is >> student_name >> student_surname;
 
@@ -78,3 +74,42 @@ ostream& operator<<(ostream& print, Student_Data Sdata){
   
   return print;
 }
+
+Student_Data::Student_Data(const Student_Data& Adata) : student_name(Adata.student_name), student_surname(Adata.student_surname), exam(Adata.exam), HW(Adata.HW) {}
+//Copy constructor
+
+Student_Data& Student_Data::operator = (const Student_Data& Adata) {
+  if (this != &Adata) {
+    student_name = Adata.student_name;
+    student_surname = Adata.student_surname;
+    exam = Adata.exam;
+    HW = Adata.HW;
+  }
+
+  return *this;
+}
+//Copy assignment operator
+
+Student_Data::Student_Data(Student_Data&& Adata) noexcept : student_name(move(Adata.student_name)), student_surname(move(Adata.student_surname)), exam(move(exam)), HW(move(HW)) {
+  Adata.exam = 0;
+}
+//Move constructor
+
+Student_Data& Student_Data::operator = (Student_Data&& Adata) noexcept {
+  if (this != &Adata) {
+    student_name = move(Adata.student_name);
+    student_surname = move(Adata.student_surname);
+    exam = move(Adata.exam);
+    HW = move(Adata.HW);
+
+    Adata.exam = 0;
+  }
+
+  return *this;
+}
+//Move assignment constructor
+
+Student_Data::~Student_Data() {
+  HW.clear();
+}
+//Deconstructor
