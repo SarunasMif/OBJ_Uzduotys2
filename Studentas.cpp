@@ -1,6 +1,5 @@
 #include "includes.h"
 #include "Studentas.h"
-//#include "headers_vector.h"
 
 Student_Data::~Student_Data(){
 
@@ -59,3 +58,18 @@ double median_grade(const Student_Data& Sdata){
 
   return 0.4 * HW_median + 0.6 * Sdata.egzaminas();
 }//Medianos skaiciavimas
+
+istream& operator>>(istream& set, Student_Data& Sdata){
+  string s_name, s_surname;
+  double e_grade;
+  vector<double> HW_grades;
+
+  cout << "Iveskite studento varda ir pavarde: ";
+  set >> s_name;
+  set >> s_surname;
+
+  Sdata.SetName(s_name);
+  Sdata.SetSurname(s_surname);
+
+  return set;
+}

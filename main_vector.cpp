@@ -168,7 +168,7 @@ void printData(const vector<Student_Data>& Sdata, string mode, string filename){
         }//Rusiouja pagal pazimiu mediana
 
         for (const auto& Sdata : sorted){
-            cout << left << setw(17) << Sdata.vardas() << setw(15) << Sdata.vardas() << setw(16) << fixed << setprecision(2) << avg_grade(Sdata) << setw(15) << fixed << setprecision(2) << median_grade(Sdata) << endl;
+            cout << left << setw(17) << Sdata.vardas() << setw(15) << Sdata.pavarde() << setw(16) << fixed << setprecision(2) << avg_grade(Sdata) << setw(15) << fixed << setprecision(2) << median_grade(Sdata) << endl;
         }
         
     }else{
@@ -279,15 +279,7 @@ void Input(Student_Data& Sdata, string gen_s){
     string str_placeholder;
     int int_placeholder;
 
-    cout << "Iveskite studento varda: ";
-    cin >> str_placeholder;
-
-    Sdata.SetName(str_placeholder);
-
-    cout << "Iveskite studento pavarde: ";
-    cin >> str_placeholder;
-
-    Sdata.SetSurname(str_placeholder);
+    cin >> Sdata; //Input daline realizacija
 
     if (gen_s == "y"){                                   
         random_device rd;

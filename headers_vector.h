@@ -1,7 +1,7 @@
 #ifndef HEADERS_H
 #define HEADERS_H
 
-#include "Studentas.h"
+//#include "Studentas.h"
 #include "includes.h"
 
 int Number_Of_Students;
