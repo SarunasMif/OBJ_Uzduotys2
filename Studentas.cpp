@@ -73,3 +73,8 @@ istream& operator>>(istream& set, Student_Data& Sdata){
 
   return set;
 }
+
+ostream& operator<<(ostream& print, Student_Data Sdata){
+  
+  return print;
+}

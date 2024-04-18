@@ -36,5 +36,6 @@ double median_grade(const Student_Data& Sdata);
 //function declarations
 
 istream& operator>>(istream& set, Student_Data& Sdata);
+ostream& operator<<(ostream& print, Student_Data Sdata);
 //Input/Output operators
 #endif
