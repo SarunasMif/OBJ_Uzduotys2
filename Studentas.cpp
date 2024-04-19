@@ -121,6 +121,6 @@ Student_Data& Student_Data::operator=(Student_Data&& Adata) noexcept {
 //Move assignment constructor
 
 Student_Data::~Student_Data() {
-  //HW.clear();
+  HW.clear();
 }
 //Deconstructor
