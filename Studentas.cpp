@@ -93,11 +93,11 @@ Student_Data& Student_Data::operator=(const Student_Data& Adata) {
 }
 //Copy assignment operator
 
-Student_Data::Student_Data(Student_Data&& Adata) noexcept : student_name(move(Adata.student_name)), student_surname(move(Adata.student_surname)), exam(move(exam)), HW(move(HW)) {
+Student_Data::Student_Data(Student_Data&& Adata) noexcept : student_name(move(Adata.student_name)), student_surname(move(Adata.student_surname)), exam(move(Adata.exam)), HW(move(Adata.HW)) {
   Adata.student_name.clear();
   Adata.student_surname.clear();
-  Adata.HW.clear();
   Adata.exam = 0;
+  Adata.HW.clear();
 
   cout << "Move constructor" << endl;
 }
@@ -108,8 +108,8 @@ Student_Data& Student_Data::operator=(Student_Data&& Adata) noexcept {
   if (this != &Adata) {
     student_name = move(Adata.student_name);
     student_surname = move(Adata.student_surname);
-    HW = move(Adata.HW);
     exam = move(Adata.exam);
+    HW = move(Adata.HW);
     Adata.student_name.clear();
     Adata.student_surname.clear();
     Adata.HW.clear();
