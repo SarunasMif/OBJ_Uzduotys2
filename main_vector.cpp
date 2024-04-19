@@ -273,7 +273,7 @@ int manualInput(){
 
         return 0;
     }
-}// Rankinis studentu duomenu ivedimas
+}// Rankinis studentu duomenu isvedimas
 
 void Input(Student_Data& Sdata, string gen_s){
     string str_placeholder;
@@ -295,7 +295,7 @@ void Input(Student_Data& Sdata, string gen_s){
         Sdata.SetHW(HomeWork);
 
         Sdata.SetExam(dis(gen));
-        // Sugeneruojami atsitiktinei pazmiai
+        // Sugeneruojami atsitiktinei pazymiai
     }else{
         do {
             cout << "Kiek namu darbu turejo studentai: ";

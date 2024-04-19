@@ -32,9 +32,9 @@ public:
 
     ~Student_Data(); //Deconstructor
     Student_Data(const Student_Data& Adata); //Copy constructor
-    Student_Data& operator = (const Student_Data& Adata);   //Copy assigment operator
-    Student_Data(Student_Data&& Adata) noexcept;    //Move constructor
-    Student_Data& operator = (Student_Data&& Adata) noexcept;    //Move assigment operator
+    Student_Data& operator=(const Student_Data& Adata);   //Copy assigment operator
+    Student_Data(Student_Data&& Adata) noexcept ;    //Move constructor
+    Student_Data& operator=(Student_Data&& Adata) noexcept;    //Move assigment operator
     //Rule of five
 };
 

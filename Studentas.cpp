@@ -75,15 +75,18 @@ ostream& operator<<(ostream& print, Student_Data Sdata){
   return print;
 }
 
-Student_Data::Student_Data(const Student_Data& Adata) : student_name(Adata.student_name), student_surname(Adata.student_surname), exam(Adata.exam), HW(Adata.HW) {}
+Student_Data::Student_Data(const Student_Data& Adata) : student_name(Adata.student_name), student_surname(Adata.student_surname), exam(Adata.exam), HW(Adata.HW) {
+  //cout << "Copy constructor" << endl;
+}
 //Copy constructor
 
-Student_Data& Student_Data::operator = (const Student_Data& Adata) {
+Student_Data& Student_Data::operator=(const Student_Data& Adata) {
+  //cout << "Copy assigment" << endl;
   if (this != &Adata) {
     student_name = Adata.student_name;
     student_surname = Adata.student_surname;
-    exam = Adata.exam;
     HW = Adata.HW;
+    exam = Adata.exam;
   }
 
   return *this;
@@ -91,17 +94,25 @@ Student_Data& Student_Data::operator = (const Student_Data& Adata) {
 //Copy assignment operator
 
 Student_Data::Student_Data(Student_Data&& Adata) noexcept : student_name(move(Adata.student_name)), student_surname(move(Adata.student_surname)), exam(move(exam)), HW(move(HW)) {
+  Adata.student_name.clear();
+  Adata.student_surname.clear();
+  Adata.HW.clear();
   Adata.exam = 0;
+
+  cout << "Move constructor" << endl;
 }
 //Move constructor
 
-Student_Data& Student_Data::operator = (Student_Data&& Adata) noexcept {
+Student_Data& Student_Data::operator=(Student_Data&& Adata) noexcept {
+  cout << "Move assigment" << endl;
   if (this != &Adata) {
     student_name = move(Adata.student_name);
     student_surname = move(Adata.student_surname);
-    exam = move(Adata.exam);
     HW = move(Adata.HW);
-
+    exam = move(Adata.exam);
+    Adata.student_name.clear();
+    Adata.student_surname.clear();
+    Adata.HW.clear();
     Adata.exam = 0;
   }
 
@@ -110,6 +121,6 @@ Student_Data& Student_Data::operator = (Student_Data&& Adata) noexcept {
 //Move assignment constructor
 
 Student_Data::~Student_Data() {
-  HW.clear();
+  //HW.clear();
 }
 //Deconstructor
