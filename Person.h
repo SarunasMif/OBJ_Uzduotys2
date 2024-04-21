@@ -21,7 +21,7 @@ public:
     //Getters
 
     virtual void f() = 0;
-    //Padaro bazine klase Person abstrakcia
+    //Padaro bazine klase Person abstrakcija
 
     ~Person() {}
     //Deconstructor
