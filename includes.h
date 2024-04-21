@@ -14,6 +14,7 @@
 #include <deque>
 #include <cstdio>
 #include <utility>
+#include <bits/stdc++.h>
 
 using namespace std;
 using namespace std::chrono;

@@ -2,18 +2,16 @@
 #define STUDENTAS_H
 
 #include "includes.h"
-//#include "headers_vector.h"
 #include "utility"
+#include "Person.h"
 
-class Student_Data {
+class Student_Data : public Person {
 private:
-    string student_name;
-    string student_surname;
     double exam;
     vector<double> HW;
 public:
-    Student_Data() : exam(0) { }
-    Student_Data(const string& name, const string& surname, double grade, const vector<double>& HW_) : student_name(name), student_surname(surname), exam(grade), HW(HW_) {}
+    Student_Data() : Person(), exam(0) { }
+    Student_Data(const string& name, const string& surname, double grade, const vector<double>& HW_) : Person(student_name, student_surname), exam(grade), HW(HW_) {}
     Student_Data(istream& is);
     //Constructors
 
@@ -37,6 +35,9 @@ public:
     Student_Data(Student_Data&& Adata) noexcept ;    //Move constructor
     Student_Data& operator=(Student_Data&& Adata) noexcept;    //Move assigment operator
     //Rule of five
+
+    void f();
+    //Pavercia derived klase Student_Data neabstrakcia, nes ji is klases Person paveldi abstraktuma
 };
 
 double avg_grade(const Student_Data& Sdata);

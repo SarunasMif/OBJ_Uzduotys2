@@ -58,7 +58,6 @@ double median_grade(const Student_Data& Sdata){
 istream& operator>>(istream& set, Student_Data& Sdata){
   string s_name, s_surname;
   double e_grade;
-  vector<double> HW_grades;
 
   cout << "Iveskite studento varda ir pavarde: ";
   set >> s_name;
@@ -75,16 +74,12 @@ ostream& operator<<(ostream& print, Student_Data Sdata){
   return print;
 }
 
-Student_Data::Student_Data(const Student_Data& Adata) : student_name(Adata.student_name), student_surname(Adata.student_surname), exam(Adata.exam), HW(Adata.HW) {
-  //cout << "Copy constructor" << endl;
-}
+Student_Data::Student_Data(const Student_Data& Adata) : Person(Adata), exam(Adata.exam), HW(Adata.HW) {}
 //Copy constructor
 
 Student_Data& Student_Data::operator=(const Student_Data& Adata) {
-  //cout << "Copy assigment" << endl;
   if (this != &Adata) {
-    student_name = Adata.student_name;
-    student_surname = Adata.student_surname;
+    Person::operator=(Adata);
     HW = Adata.HW;
     exam = Adata.exam;
   }
@@ -93,21 +88,18 @@ Student_Data& Student_Data::operator=(const Student_Data& Adata) {
 }
 //Copy assignment operator
 
-Student_Data::Student_Data(Student_Data&& Adata) noexcept : student_name(move(Adata.student_name)), student_surname(move(Adata.student_surname)), exam(move(Adata.exam)), HW(move(Adata.HW)) {
+Student_Data::Student_Data(Student_Data&& Adata) noexcept : Person(move(Adata)), exam(move(Adata.exam)), HW(move(Adata.HW)) {
   Adata.student_name.clear();
   Adata.student_surname.clear();
   Adata.exam = 0;
   Adata.HW.clear();
 
-  cout << "Move constructor" << endl;
 }
 //Move constructor
 
 Student_Data& Student_Data::operator=(Student_Data&& Adata) noexcept {
-  cout << "Move assigment" << endl;
   if (this != &Adata) {
-    student_name = move(Adata.student_name);
-    student_surname = move(Adata.student_surname);
+    Person::operator=(move(Adata));
     exam = move(Adata.exam);
     HW = move(Adata.HW);
     Adata.student_name.clear();
@@ -119,6 +111,10 @@ Student_Data& Student_Data::operator=(Student_Data&& Adata) noexcept {
   return *this;
 }
 //Move assignment constructor
+
+void Student_Data::f() {
+  cout << " " << endl;
+}
 
 Student_Data::~Student_Data() {
   HW.clear();
