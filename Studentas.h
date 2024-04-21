@@ -37,7 +37,7 @@ public:
     //Rule of five
 
     void f();
-    //Pavercia derived klase Student_Data neabstrakcia, nes ji is klases Person paveldi abstraktuma
+    //Pavercia derived klase Student_Data neabstrakcia, nes ji is bazines klases Person paveldi abstraktuma
 };
 
 double avg_grade(const Student_Data& Sdata);
