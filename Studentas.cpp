@@ -114,7 +114,7 @@ Student_Data& Student_Data::operator=(Student_Data&& Adata) noexcept {
 
 void Student_Data::f() {
   cout << " " << endl;
-}
+}//Padaro, kad derived klase Student_Data nebutu abstrakti
 
 Student_Data::~Student_Data() {
   HW.clear();
