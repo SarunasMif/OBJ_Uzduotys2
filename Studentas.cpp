@@ -14,7 +14,7 @@ istream& Student_Data::readStudent(istream& is){
   exam = HW.back();
   HW.pop_back();
   return is;
-}//Studentu informacijos ivedimas i class
+}//Studentu informacijos isvedimas i class
 
 double Average(const vector<double>& HW){
   double average = 0;
@@ -67,7 +67,7 @@ istream& operator>>(istream& set, Student_Data& Sdata){
   Sdata.SetSurname(s_surname);
 
   return set;
-}
+}//Input opperator realizavimas
 
 ostream& operator<<(ostream& print, Student_Data Sdata){
   
