@@ -57,7 +57,6 @@ double median_grade(const Student_Data& Sdata){
 
 istream& operator>>(istream& set, Student_Data& Sdata){
   string s_name, s_surname;
-  double e_grade;
 
   cout << "Iveskite studento varda ir pavarde: ";
   set >> s_name;
