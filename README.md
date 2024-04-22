@@ -123,7 +123,6 @@ File ivedimas:
     exam = HW.back();
     HW.pop_back();
 
-
 # Duomenu isvedimas
 
 `vardas();`
