@@ -14,7 +14,7 @@ istream& Student_Data::readStudent(istream& is){
   exam = HW.back();
   HW.pop_back();
   return is;
-}//Studentu informacijos ivedimas i class
+}//Studentu informacijos isvedimas i class
 
 double Average(const vector<double>& HW){
   double average = 0;
@@ -75,13 +75,10 @@ ostream& operator<<(ostream& print, Student_Data Sdata){
   return print;
 }
 
-Student_Data::Student_Data(const Student_Data& Adata) : student_name(Adata.student_name), student_surname(Adata.student_surname), exam(Adata.exam), HW(Adata.HW) {
-  //cout << "Copy constructor" << endl;
-}
+Student_Data::Student_Data(const Student_Data& Adata) : student_name(Adata.student_name), student_surname(Adata.student_surname), exam(Adata.exam), HW(Adata.HW) {}
 //Copy constructor
 
 Student_Data& Student_Data::operator=(const Student_Data& Adata) {
-  //cout << "Copy assigment" << endl;
   if (this != &Adata) {
     student_name = Adata.student_name;
     student_surname = Adata.student_surname;
@@ -99,12 +96,10 @@ Student_Data::Student_Data(Student_Data&& Adata) noexcept : student_name(move(Ad
   Adata.exam = 0;
   Adata.HW.clear();
 
-  cout << "Move constructor" << endl;
 }
 //Move constructor
 
 Student_Data& Student_Data::operator=(Student_Data&& Adata) noexcept {
-  cout << "Move assigment" << endl;
   if (this != &Adata) {
     student_name = move(Adata.student_name);
     student_surname = move(Adata.student_surname);
