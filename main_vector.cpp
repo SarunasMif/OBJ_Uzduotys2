@@ -247,7 +247,7 @@ int manualInput(){
             }
         }while (!isDigit(str_placeholder, 2));
 
-       printData(Sdata, str_placeholder, "xd.txt");
+        splitstudents(Sdata, str_placeholder);
 
         return 0;
     }else{
