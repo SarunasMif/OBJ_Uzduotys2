@@ -2,13 +2,6 @@
 #define HEADERS_H
 
 #include "Studentas.h"
-#include "includes.h"
-
-int Number_Of_Students;
-int Number_Of_Homework;
-string gen_s;
-string input_mode;
-
 
 void splitstudents(vector<Student_Data>& S_Data, string mode);
 bool isDigit(const string& str_placeholder, int check);

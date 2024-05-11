@@ -28,8 +28,9 @@ double Average(const vector<double>& HW){
 
 double avg_grade(const Student_Data& Sdata){
   double average = Average(Sdata.ND());
+  average = 0.4 * average + 0.6 * Sdata.egzaminas();
 
-  return 0.4 * average + 0.6 * Sdata.egzaminas();
+  return round(average * 100) / 100;
 }//Vidurkio skaiciavimas
 
 double Median(const vector<double>& HW){
