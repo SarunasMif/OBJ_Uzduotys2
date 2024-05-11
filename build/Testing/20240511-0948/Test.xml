@@ -24,8 +24,8 @@
 	ProcessorClockFrequency="3693"
 	>
 	<Testing>
-		<StartDateTime>May 11 14:58 FLE Daylight Time</StartDateTime>
-		<StartTestTime>1715428698</StartTestTime>
+		<StartDateTime>May 11 15:10 FLE Daylight Time</StartDateTime>
+		<StartTestTime>1715429406</StartTestTime>
 		<TestList>
 			<Test>./Unit_Tests/Test_CMake</Test>
 		</TestList>
@@ -36,7 +36,7 @@
 			<FullCommandLine>C:\Users\sgiky\Documents\GitHub\OBJ_Uzduotys2\build\Unit_Tests\Test_CMake.exe</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0443935</Value>
+					<Value>0.0712686</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -51,12 +51,12 @@
 					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
 				</NamedMeasurement>
 				<Measurement>
-					<Value encoding="base64" compression="gzip">eJydklFPgzAQx9/5FPc4Hmgcvpn4MMeC0egMk71QQjpWSSO0ptdq5qcXBplucQjeS6/t73/3v+QiK6WQBVRMyIkLL1pVML+iMXKNFAvxuqOBym3FpUEaCnNrN3R5c5fFn1urzA59WihVlNxwND9T1DktmixrKpM8d5LrQ6QQdW0voWGw7dteAK2oT+Ik3iFSCEu1YWULcPkutJKNJ0BuPPt2Ak9bbl80lsJkz02TbM1zo3Q2dRKI4kfYR/obQAQGouiea7qN5f0AGiYXUKE7yk+rAaMMK11nkHReMsSeSbp/MluH/UOcgmP8d9p/2/f/sO+Th0UwxP43ON6+32f/3NYZzrS3VR/yeKvPbzNoJslxp3qkp9lqtQia2Tslcb4AlSgh0Q==</Value>
+					<Value encoding="base64" compression="gzip">eJydk01vwjAMhu/9FT7CgQgqTpN22GBi2rQhMcqFVFVpQxutTVDssLFfv5ZUbEKMUXzJ1/PGrxN5ZpWSKoMylqrThbXRJYxueIDCIMdMvu/4WCe2FIqQTyQ92hWf3j9FwVdqNe3Q55nWWSFIIP2eokl4Vs+i+maWJN7y9hAhzJq0Q6gZdHndAtDKamTesneIECaFXsWFA4TaSqNV7QlQUM9ujuCB4/aXBkpSNK+TRAuRkDbRwFvCLHiFfYSnACZxLLNmu6JdTJ8voKHThxK7rfw4DZCmuOh6baT+f6X4lbk3MtVTX1TLEX5FMf4VxYyKGPHMtzTn7G4xOV/FMdjGf6O92v7fX9Gcs5eH8SX2f8D29s++/skWYqzqnXkuETaxIdBroFw4RlvaWIKPGMGIUm9FCihVIkBW+s9EiBQdnBuBuS7SWj3o+0NY7eoGDr1v74FmXw==</Value>
 				</Measurement>
 			</Results>
 		</Test>
-		<EndDateTime>May 11 14:58 FLE Daylight Time</EndDateTime>
-		<EndTestTime>1715428698</EndTestTime>
+		<EndDateTime>May 11 15:10 FLE Daylight Time</EndDateTime>
+		<EndTestTime>1715429406</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>
