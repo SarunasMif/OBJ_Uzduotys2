@@ -4,9 +4,11 @@
 TEST(Unit_Tests_Vector_1, isDigit_Test) {
     string case_1_1 = "11";    // Expected output: false
     string case_1_2 = "8";    // Expected output: true
+    string case_all_3 = "0";    // Expected output: true
 
     EXPECT_EQ(isDigit(case_1_1, 1), false) << "Function did not handle the value of the string correctly" << endl;
     EXPECT_EQ(isDigit(case_1_2, 1), true) << "Function did not handle the value of the string correctly" << endl;
+    EXPECT_EQ(isDigit(case_all_3, 1), false) << "Function did not handle the value of the string correctly" << endl;
     // Strings too test possible input scenarios for the first if
 
     string case_2_1 = "5";   // Expected output: false
@@ -14,6 +16,7 @@ TEST(Unit_Tests_Vector_1, isDigit_Test) {
 
     EXPECT_EQ(isDigit(case_2_1, 2), false) << "Function did not handle the value of the string correctly" << endl;
     EXPECT_EQ(isDigit(case_2_2, 2), true) << "Function did not handle the value of the string correctly" << endl;
+    EXPECT_EQ(isDigit(case_all_3, 2), false) << "Function did not handle the value of the string correctly" << endl;
     // Strings too test possible input scenarios for the second if
 
     string case_3_1 = "4";    // Expected output: false
@@ -21,6 +24,7 @@ TEST(Unit_Tests_Vector_1, isDigit_Test) {
 
     EXPECT_EQ(isDigit(case_3_1, 3), false) << "Function did not handle the value of the string correctly" << endl;
     EXPECT_EQ(isDigit(case_3_2, 3), true) << "Function did not handle the value of the string correctly" << endl;
+    EXPECT_EQ(isDigit(case_all_3, 3), false) << "Function did not handle the value of the string correctly" << endl;
     // Tests possible input scenarios for the third if
 
     string gen_1 = "Testas";    // Expected output: false

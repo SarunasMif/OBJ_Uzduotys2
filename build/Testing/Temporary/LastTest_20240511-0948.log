@@ -1,10 +1,10 @@
-Start testing: May 11 15:10 FLE Daylight Time
+Start testing: May 11 15:50 FLE Daylight Time
 ----------------------------------------------------------
 1/1 Testing: Test_CMake
 1/1 Test: Test_CMake
 Command: "C:/Users/sgiky/Documents/GitHub/OBJ_Uzduotys2/build/Unit_Tests/Test_CMake.exe"
 Directory: C:/Users/sgiky/Documents/GitHub/OBJ_Uzduotys2/build/Unit_Tests
-"Test_CMake" start time: May 11 15:10 FLE Daylight Time
+"Test_CMake" start time: May 11 15:50 FLE Daylight Time
 Output:
 ----------------------------------------------------------
 Running main() from C:\Users\sgiky\Documents\GitHub\OBJ_Uzduotys2\googletest\googletest\src\gtest_main.cc
@@ -34,11 +34,11 @@ Running main() from C:\Users\sgiky\Documents\GitHub\OBJ_Uzduotys2\googletest\goo
 [==========] 4 tests from 4 test suites ran. (0 ms total)
 [  PASSED  ] 4 tests.
 <end of output>
-Test time =   0.07 sec
+Test time =   0.06 sec
 ----------------------------------------------------------
 Test Passed.
-"Test_CMake" end time: May 11 15:10 FLE Daylight Time
+"Test_CMake" end time: May 11 15:50 FLE Daylight Time
 "Test_CMake" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: May 11 15:10 FLE Daylight Time
+End testing: May 11 15:50 FLE Daylight Time

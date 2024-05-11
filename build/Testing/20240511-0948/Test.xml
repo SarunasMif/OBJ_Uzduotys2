@@ -24,8 +24,8 @@
 	ProcessorClockFrequency="3693"
 	>
 	<Testing>
-		<StartDateTime>May 11 15:10 FLE Daylight Time</StartDateTime>
-		<StartTestTime>1715429406</StartTestTime>
+		<StartDateTime>May 11 15:50 FLE Daylight Time</StartDateTime>
+		<StartTestTime>1715431825</StartTestTime>
 		<TestList>
 			<Test>./Unit_Tests/Test_CMake</Test>
 		</TestList>
@@ -36,7 +36,7 @@
 			<FullCommandLine>C:\Users\sgiky\Documents\GitHub\OBJ_Uzduotys2\build\Unit_Tests\Test_CMake.exe</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0712686</Value>
+					<Value>0.0585679</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -55,8 +55,8 @@
 				</Measurement>
 			</Results>
 		</Test>
-		<EndDateTime>May 11 15:10 FLE Daylight Time</EndDateTime>
-		<EndTestTime>1715429406</EndTestTime>
+		<EndDateTime>May 11 15:50 FLE Daylight Time</EndDateTime>
+		<EndTestTime>1715431825</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>
