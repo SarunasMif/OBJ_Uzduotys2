@@ -1,5 +1,5 @@
 googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: \
- C:\Users\sgiky\Documents\GitHub\OBJ_Uzduotys2\googletest\googletest\src\gtest_main.cc \
+ C:/Users/sgiky/Documents/GitHub/OBJ_Uzduotys2/googletest/googletest/src/gtest_main.cc \
  C:/msys64/ucrt64/include/c++/13.2.0/cstdio \
  C:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32/bits/os_defines.h \

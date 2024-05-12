@@ -1,4 +1,5 @@
 C:/Users/sgiky/Documents/GitHub/OBJ_Uzduotys2/build/CMakeFiles/Main_CMake.dir
+C:/Users/sgiky/Documents/GitHub/OBJ_Uzduotys2/build/CMakeFiles/Program.dir
 C:/Users/sgiky/Documents/GitHub/OBJ_Uzduotys2/build/CMakeFiles/test.dir
 C:/Users/sgiky/Documents/GitHub/OBJ_Uzduotys2/build/CMakeFiles/edit_cache.dir
 C:/Users/sgiky/Documents/GitHub/OBJ_Uzduotys2/build/CMakeFiles/rebuild_cache.dir

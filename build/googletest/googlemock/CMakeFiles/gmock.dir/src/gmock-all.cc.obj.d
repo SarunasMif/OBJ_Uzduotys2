@@ -1,5 +1,5 @@
 googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: \
- C:\Users\sgiky\Documents\GitHub\OBJ_Uzduotys2\googletest\googlemock\src\gmock-all.cc \
+ C:/Users/sgiky/Documents/GitHub/OBJ_Uzduotys2/googletest/googlemock/src/gmock-all.cc \
  C:/Users/sgiky/Documents/GitHub/OBJ_Uzduotys2/googletest/googlemock/include/gmock/gmock.h \
  C:/Users/sgiky/Documents/GitHub/OBJ_Uzduotys2/googletest/googlemock/include/gmock/gmock-actions.h \
  C:/msys64/ucrt64/include/errno.h C:/msys64/ucrt64/include/crtdefs.h \

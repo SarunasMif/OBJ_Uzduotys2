@@ -1,5 +1,5 @@
 googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj: \
- C:\Users\sgiky\Documents\GitHub\OBJ_Uzduotys2\googletest\googlemock\src\gmock_main.cc \
+ C:/Users/sgiky/Documents/GitHub/OBJ_Uzduotys2/googletest/googlemock/src/gmock_main.cc \
  C:/msys64/ucrt64/include/c++/13.2.0/iostream \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/requires_hosted.h \
  C:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++config.h \

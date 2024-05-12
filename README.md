@@ -139,4 +139,26 @@ File ivedimas:
         cout << mark << " ";
     }
 
+# Releases
+
+`v1.1`: Perdarytas studentas duomenu laikymas. Vietoj struct nuo šiuol naudojama class.
+
+`v1.12`: Aprašytas README failas, kuriame demonstruojamas programos greičio skirtumas tarp class ir struct, ir panaudojant skirtingo lygio kompiliatorius. 
+
+`v1.13`: Sutvarkytos funkcijų iššaukimo problemos. 
+
+`v1.2`: Implementuota Rule of Five ir sudarytas jų testavimo failas `test.cpp`.
+
+`v1.21`: Aprašytas README failas.
+
+`v1.22`: Modifikuotas `test.cpp` failas, kad testai būtų labiau suprantami.
+
+`v1.5`: Class padalinta į dvi dalis: base klasę Person ir derived klasę Student.
+
+`v1.51`: Aprašytas README failas.
+
+`v1.52`: Modifikuotas `test.cpp` failas, kad testai būtų labiau suprantami.
+
+`v2.0`: Padalintas `main_vector.cpp` į `vector.cpp` ir `main.cpp`, kad išvengti konfliktų. Padalintas `headers_vector.h` į `headers_vector.h` ir `global.h`, kad išvengti kelių apibrėžimų. Parašyti Unit Testas panaudojant Google Test framework. Perrašytas Makefile. Papildytas README failas ir sudaryta class dokumentacija naudojant doxygen.
+
 
