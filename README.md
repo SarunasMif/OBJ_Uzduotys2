@@ -161,4 +161,18 @@ File ivedimas:
 
 `v2.0`: Padalintas `main_vector.cpp` į `vector.cpp` ir `main.cpp`, kad išvengti konfliktų. Padalintas `headers_vector.h` į `headers_vector.h` ir `global.h`, kad išvengti kelių apibrėžimų. Parašyti Unit Testas panaudojant Google Test framework. Perrašytas Makefile. Papildytas README failas ir sudaryta class dokumentacija naudojant doxygen.
 
+# Naudojimosi instrukcija
 
+1) Jei neturite susiinstaliuokite c++ compilers sekdami instrukcijas šiame puslapyje https://www.freecodecamp.org/news/how-to-install-c-and-cpp-compiler-on-windows/ .
+
+2) Jei neturite susiinstaliuokite cmake, kuris bus reikalingas buildint programa. Puslapyje https://cmake.org/download/ parsisiuskite `Windows x64 ZIP` ir extractinkit ji jusu pasirinktoje vietoje. Tada nueikite i cmake folderyje esanti bin folderi ir jo PATH pridekite i `Environment veriables PATH`.
+
+3) Atsidarykite `cmd` ir naudodami cd nunaviguokite i folderi, i kuri parsisiuntete program. Tada i terminal iveskite sias komandas:
+
+- `mkdir build`
+- `cd build`
+- `cmake -G "Unix Makefiles" ..`
+- `cmake --build .`
+- `copy Program.exe ..`
+
+4) Programos paleidziama exe faila rasit programos folderio viduje.
