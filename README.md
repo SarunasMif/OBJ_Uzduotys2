@@ -1,5 +1,44 @@
 # Obj_Uzduotys2
 
+# Releases
+
+`v1.1`: Perdarytas studentas duomenu laikymas. Vietoj struct nuo šiuol naudojama class.
+
+`v1.12`: Aprašytas README failas, kuriame demonstruojamas programos greičio skirtumas tarp class ir struct, ir panaudojant skirtingo lygio kompiliatorius. 
+
+`v1.13`: Sutvarkytos funkcijų iššaukimo problemos. 
+
+`v1.2`: Implementuota Rule of Five ir sudarytas jų testavimo failas `test.cpp`.
+
+`v1.21`: Aprašytas README failas.
+
+`v1.22`: Modifikuotas `test.cpp` failas, kad testai būtų labiau suprantami.
+
+`v1.5`: Class padalinta į dvi dalis: base klasę Person ir derived klasę Student.
+
+`v1.51`: Aprašytas README failas.
+
+`v1.52`: Modifikuotas `test.cpp` failas, kad testai būtų labiau suprantami.
+
+`v2.0`: Padalintas `main_vector.cpp` į `vector.cpp` ir `main.cpp`, kad išvengti konfliktų. Padalintas `headers_vector.h` į `headers_vector.h` ir `global.h`, kad išvengti kelių apibrėžimų. Parašyti Unit Testas panaudojant Google Test framework. Perrašytas Makefile. Papildytas README failas ir sudaryta class dokumentacija naudojant doxygen.
+
+# Naudojimosi instrukcija
+
+1) Jei neturite susiinstaliuokite c++ compilers sekdami instrukcijas šiame puslapyje https://www.freecodecamp.org/news/how-to-install-c-and-cpp-compiler-on-windows/ .
+
+2) Jei neturite susiinstaliuokite cmake, kuris bus reikalingas buildint programa. Puslapyje https://cmake.org/download/ parsisiuskite `Windows x64 ZIP` ir extractinkit ji jusu pasirinktoje vietoje. Tada nueikite i cmake folderyje esanti bin folderi ir jo PATH pridekite i `Environment veriables PATH`.
+
+3) Atsidarykite `cmd` ir naudodami cd nunaviguokite i folderi, i kuri parsisiuntete program. Tada i terminal iveskite sias komandas:
+
+- `git clone https://github.com/google/googletest.git -b v1.14.0`
+- `mkdir build`
+- `cd build`
+- `cmake -G "Unix Makefiles" ..`
+- `cmake --build .`
+- `copy Program.exe ..`
+
+4) Programos paleidziama exe faila rasit programos folderio viduje.
+
 # Realizacijos sparta be optimizavimo
 
 100.000 studentu failo:
@@ -139,40 +178,3 @@ File ivedimas:
         cout << mark << " ";
     }
 
-# Releases
-
-`v1.1`: Perdarytas studentas duomenu laikymas. Vietoj struct nuo šiuol naudojama class.
-
-`v1.12`: Aprašytas README failas, kuriame demonstruojamas programos greičio skirtumas tarp class ir struct, ir panaudojant skirtingo lygio kompiliatorius. 
-
-`v1.13`: Sutvarkytos funkcijų iššaukimo problemos. 
-
-`v1.2`: Implementuota Rule of Five ir sudarytas jų testavimo failas `test.cpp`.
-
-`v1.21`: Aprašytas README failas.
-
-`v1.22`: Modifikuotas `test.cpp` failas, kad testai būtų labiau suprantami.
-
-`v1.5`: Class padalinta į dvi dalis: base klasę Person ir derived klasę Student.
-
-`v1.51`: Aprašytas README failas.
-
-`v1.52`: Modifikuotas `test.cpp` failas, kad testai būtų labiau suprantami.
-
-`v2.0`: Padalintas `main_vector.cpp` į `vector.cpp` ir `main.cpp`, kad išvengti konfliktų. Padalintas `headers_vector.h` į `headers_vector.h` ir `global.h`, kad išvengti kelių apibrėžimų. Parašyti Unit Testas panaudojant Google Test framework. Perrašytas Makefile. Papildytas README failas ir sudaryta class dokumentacija naudojant doxygen.
-
-# Naudojimosi instrukcija
-
-1) Jei neturite susiinstaliuokite c++ compilers sekdami instrukcijas šiame puslapyje https://www.freecodecamp.org/news/how-to-install-c-and-cpp-compiler-on-windows/ .
-
-2) Jei neturite susiinstaliuokite cmake, kuris bus reikalingas buildint programa. Puslapyje https://cmake.org/download/ parsisiuskite `Windows x64 ZIP` ir extractinkit ji jusu pasirinktoje vietoje. Tada nueikite i cmake folderyje esanti bin folderi ir jo PATH pridekite i `Environment veriables PATH`.
-
-3) Atsidarykite `cmd` ir naudodami cd nunaviguokite i folderi, i kuri parsisiuntete program. Tada i terminal iveskite sias komandas:
-
-- `mkdir build`
-- `cd build`
-- `cmake -G "Unix Makefiles" ..`
-- `cmake --build .`
-- `copy Program.exe ..`
-
-4) Programos paleidziama exe faila rasit programos folderio viduje.
