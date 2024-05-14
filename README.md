@@ -37,7 +37,7 @@
 - `cmake --build .`
 - `copy Program.exe ..`
 
-4) Programos paleidziama exe faila rasit programos folderio viduje.
+4) Programos paleidziama exe faila rasit programos folderio viduje, o Unit test exe faila rasit nueje i build aplanka ir tada i Unit_Test aplanka.
 
 # Realizacijos sparta be optimizavimo
 
