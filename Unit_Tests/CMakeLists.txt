@@ -4,7 +4,6 @@ set(This Test_CMake)
 
 set(Source 
     Unit_Tests_Class.cpp
-    Unit_Tests_Vector.cpp
 )
 
 add_executable(${This} ${Source})

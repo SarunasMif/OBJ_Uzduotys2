@@ -1,0 +1,70 @@
+Start testing: May 14 16:36 FLE Daylight Time
+----------------------------------------------------------
+1/1 Testing: Test_CMake
+1/1 Test: Test_CMake
+Command: "C:/Users/sgiky/Documents/GitHub/OBJ_Uzduotys2/build/Unit_Tests/Test_CMake.exe"
+Directory: C:/Users/sgiky/Documents/GitHub/OBJ_Uzduotys2/build/Unit_Tests
+"Test_CMake" start time: May 14 16:36 FLE Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/sgiky/Documents/GitHub/OBJ_Uzduotys2/googletest/googletest/src/gtest_main.cc
+[==========] Running 9 tests from 9 test suites.
+[----------] Global test environment set-up.
+[----------] 1 test from Unit_Tests_Class_1
+[ RUN      ] Unit_Tests_Class_1.AVG_Test
+[       OK ] Unit_Tests_Class_1.AVG_Test (0 ms)
+[----------] 1 test from Unit_Tests_Class_1 (0 ms total)
+
+[----------] 1 test from Unit_Tests_Class_2
+[ RUN      ] Unit_Tests_Class_2.MED_Test
+[       OK ] Unit_Tests_Class_2.MED_Test (0 ms)
+[----------] 1 test from Unit_Tests_Class_2 (0 ms total)
+
+[----------] 1 test from Unit_Tests_Class_3
+[ RUN      ] Unit_Tests_Class_3.DefCon_Test
+[       OK ] Unit_Tests_Class_3.DefCon_Test (0 ms)
+[----------] 1 test from Unit_Tests_Class_3 (0 ms total)
+
+[----------] 1 test from Unit_Test_Class_4
+[ RUN      ] Unit_Test_Class_4.InpStr_Test
+[       OK ] Unit_Test_Class_4.InpStr_Test (0 ms)
+[----------] 1 test from Unit_Test_Class_4 (0 ms total)
+
+[----------] 1 test from Unit_Test_Class_5
+[ RUN      ] Unit_Test_Class_5.CopyCon_Test
+[       OK ] Unit_Test_Class_5.CopyCon_Test (0 ms)
+[----------] 1 test from Unit_Test_Class_5 (0 ms total)
+
+[----------] 1 test from Unit_Test_Class_6
+[ RUN      ] Unit_Test_Class_6.MovCon_Test
+[       OK ] Unit_Test_Class_6.MovCon_Test (0 ms)
+[----------] 1 test from Unit_Test_Class_6 (0 ms total)
+
+[----------] 1 test from Unit_Test_Class_7
+[ RUN      ] Unit_Test_Class_7.CopyAss_Test
+[       OK ] Unit_Test_Class_7.CopyAss_Test (0 ms)
+[----------] 1 test from Unit_Test_Class_7 (0 ms total)
+
+[----------] 1 test from Unit_Test_Class_8
+[ RUN      ] Unit_Test_Class_8.MovAss_Test
+[       OK ] Unit_Test_Class_8.MovAss_Test (0 ms)
+[----------] 1 test from Unit_Test_Class_8 (0 ms total)
+
+[----------] 1 test from Unit_Test_Class_9
+[ RUN      ] Unit_Test_Class_9.ManInp_Test
+Press any key to continue . . . 
+[       OK ] Unit_Test_Class_9.ManInp_Test (17 ms)
+[----------] 1 test from Unit_Test_Class_9 (17 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 9 test suites ran. (17 ms total)
+[  PASSED  ] 9 tests.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"Test_CMake" end time: May 14 16:36 FLE Daylight Time
+"Test_CMake" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 14 16:36 FLE Daylight Time
